@@ -1,4 +1,10 @@
-﻿## Reading CPU Data
+﻿## Usage
+
+```sh
+graphawsjsondata.exe --gen-sql-report [--output-path|-o <output_path>] [--computer-name|-h $env:COMPUTERNAME] [--input-file|-i <sqliteDB_file>]
+```
+
+# Reading CPU Data
 
 CPU data is stored as a 0.1% value, rather than a 1.0% value in the SqliteDB. To counter this, when the data  being converted from the SqliteDB to JSON occurs, it takes this into account and multiplies the value by 10x.
 
